@@ -1,1 +1,3 @@
-# Teksewa-OOP-Fundamentals
+# Teksewa OOP With C#
+
+## Day 2
