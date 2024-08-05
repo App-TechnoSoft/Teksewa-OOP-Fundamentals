@@ -25,10 +25,33 @@ DateTime dob = new(1990, 12, 21);
 
 //Console.WriteLine(averageWeight);
 
-string userInput = Console.ReadLine();
-Console.WriteLine($"Your entered {userInput.Length} characters");
+// string userInput = Console.ReadLine();
+//Console.WriteLine($"Your entered {userInput.Length} characters");
 
 // Get user name and convert it to uppercase
+
+Person bishnu = new Person("Bishnu Rawal", new DateTime(1990, 12, 12), 79387589373534);
+bishnu.PrintDetails();
+
+Person binisha = new();
+binisha.name = "Binisha";
+binisha.dob = new DateTime(2000, 12, 12);
+binisha.nid = 79387589334535;
+binisha.PrintDetails();
+
+// Create a class called "Page"
+// with fields height (inch), width (inch) and title
+
+// "Page" should have parameterized constructor which
+// assigns each fields
+
+// Create a method that prints height and width 
+// of that page in pixels
+
+// Create instance of this class and display details in console
+
+
+
 
 
 
