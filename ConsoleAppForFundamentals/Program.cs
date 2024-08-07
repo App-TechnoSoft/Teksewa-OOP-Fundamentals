@@ -31,13 +31,13 @@ DateTime dob = new(1990, 12, 21);
 // Get user name and convert it to uppercase
 
 Person bishnu = new Person("Bishnu Rawal", new DateTime(1990, 12, 12), 79387589373534);
-bishnu.PrintDetails();
+//bishnu.PrintDetails();
 
 Person binisha = new();
 binisha.name = "Binisha";
 binisha.dob = new DateTime(2000, 12, 12);
 binisha.nid = 79387589334535;
-binisha.PrintDetails();
+//binisha.PrintDetails();
 
 // Create a class called "Page"
 // with fields height (inch), width (inch) and title
@@ -51,8 +51,9 @@ binisha.PrintDetails();
 // Create instance of this class and display details in console
 
 
+Student bis = new("Bishnu sdfsafa Singh Yawal", new DateTime(1990, 12, 12), "Ascol", "BIT");
+var x = bis.CalculateAge();
+var y = bis.GetInitials();
 
-
-
-
-
+var output = Student.PrintDetails(age: x, initial: y);
+Console.WriteLine(output);
