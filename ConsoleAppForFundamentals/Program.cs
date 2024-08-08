@@ -52,8 +52,17 @@ binisha.nid = 79387589334535;
 
 
 Student bis = new("Bishnu sdfsafa Singh Yawal", new DateTime(1990, 12, 12), "Ascol", "BIT");
-var x = bis.CalculateAge();
+(string AgeString, int AgeDays) = bis.CalculateAge();
 var y = bis.GetInitials();
 
-var output = Student.PrintDetails(age: x, initial: y);
+var output = Student.PrintDetails(age: AgeString, initial: y);
+var output1 = Student.PrintDetails(age: AgeString, initial: y, ageDays: AgeDays);
 Console.WriteLine(output);
+Console.WriteLine(output1);
+
+
+Vehicle vehicle= new();
+vehicle.VehicleNumber = "BA PA 3455";
+var x = vehicle.VehicleNumber;
+
+ElectricVehicle ev = new();
