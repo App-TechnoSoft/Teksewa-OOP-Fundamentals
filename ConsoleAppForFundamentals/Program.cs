@@ -61,8 +61,17 @@ Console.WriteLine(output);
 Console.WriteLine(output1);
 
 
-Vehicle vehicle= new();
-vehicle.VehicleNumber = "BA PA 3455";
-var x = vehicle.VehicleNumber;
+// Vehicle vehicle= new Vehicle();
+// vehicle.VehicleNumber = "BA PA 3455";
+// var x = vehicle.VehicleNumber;
 
-ElectricVehicle ev = new();
+// Modify instantiation process
+
+// EV = number, range, battercapacity
+IVehicle car1 = new ElectricVehicle("BA PA 3455", 420, 40.5f);
+
+// Engine = number, mileage, cc
+IVehicle car2 = new EngineVehicle("BA PA 1234");
+
+Generics g = new();
+g.PrintDetails<string, int>("abc", 1);

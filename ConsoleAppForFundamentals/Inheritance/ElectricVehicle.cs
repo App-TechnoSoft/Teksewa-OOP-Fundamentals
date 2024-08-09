@@ -1,10 +1,14 @@
-public class ElectricVehicle: Vehicle
+public class ElectricVehicle : Vehicle, IVehicle
 {
+    public ElectricVehicle(string number, short range, float battercapacity)
+    : base(number)
+    {           
+        Range = range;
+        BatteryCapacity = battercapacity;     
+    }
+
     public float BatteryCapacity { get; set; }
     public short Range { get; set; }
 
-    public float GetMileage(float distance, float batteryUsedPercentage)
-    {
-        return 0.0f;
-    }
+    public float GetDistanceCovered(float batteryUsedPercentage) => Range / 100 * batteryUsedPercentage;
 }

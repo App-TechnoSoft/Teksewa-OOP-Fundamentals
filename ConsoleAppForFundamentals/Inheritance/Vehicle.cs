@@ -1,5 +1,10 @@
-public class Vehicle
+public abstract class Vehicle
 {
+    public Vehicle(string number)
+    {
+        vehicleNumber = number;
+    }
+    
     string vehicleNumber;
 
     public string VehicleNumber 
@@ -16,5 +21,4 @@ public class Vehicle
     public DateTime Year { get; set; }
     public VehicleType Type { get; set; } = VehicleType.Wagon; 
 
-    //public float CalculateMileage() => 0.0f;
 }
