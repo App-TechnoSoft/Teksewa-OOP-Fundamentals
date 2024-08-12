@@ -1,4 +1,7 @@
-﻿// Datatypes
+﻿using ABC;
+using ConsoleAppForFundamentals.Generics;
+
+// Datatypes
 // Numbers: Integers and Floating points
 
 byte? age = 34;
@@ -75,3 +78,6 @@ IVehicle car2 = new EngineVehicle("BA PA 1234");
 
 Generics g = new();
 g.PrintDetails<string, int>("abc", 1);
+
+PlayingWIthCollections.LearnArrays();
+

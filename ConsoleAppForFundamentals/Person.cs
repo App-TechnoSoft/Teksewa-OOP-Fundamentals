@@ -1,3 +1,4 @@
+namespace ABC;
 class Person
 {
     public Person()
