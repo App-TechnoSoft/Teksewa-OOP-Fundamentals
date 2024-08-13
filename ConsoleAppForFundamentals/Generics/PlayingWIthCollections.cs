@@ -31,7 +31,7 @@ internal class PlayingWIthCollections
     public void LearnLists()
     {
         List<string> names = ["Bishnu", "Bishnu2", "Ramesh"];
-        names.Add("Ram");
+        names.Add("Ram");        
 
         List<(string Country, string Capital)> countries = new();
         countries.Add(("Nepal", "Kathmandu"));

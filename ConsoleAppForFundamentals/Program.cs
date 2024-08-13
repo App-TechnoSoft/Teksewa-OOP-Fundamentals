@@ -1,4 +1,5 @@
 ﻿using ABC;
+using ConsoleAppForFundamentals;
 using ConsoleAppForFundamentals.Generics;
 
 // Datatypes
@@ -60,8 +61,8 @@ var y = bis.GetInitials();
 
 var output = Student.PrintDetails(age: AgeString, initial: y);
 var output1 = Student.PrintDetails(age: AgeString, initial: y, ageDays: AgeDays);
-Console.WriteLine(output);
-Console.WriteLine(output1);
+//Console.WriteLine(output);
+//Console.WriteLine(output1);
 
 
 // Vehicle vehicle= new Vehicle();
@@ -77,7 +78,8 @@ IVehicle car1 = new ElectricVehicle("BA PA 3455", 420, 40.5f);
 IVehicle car2 = new EngineVehicle("BA PA 1234");
 
 Generics g = new();
-g.PrintDetails<string, int>("abc", 1);
+//g.PrintDetails<string, int>("abc", 1);
 
-PlayingWIthCollections.LearnArrays();
+//PlayingWIthCollections.LearnArrays();
 
+Linq.Query();
