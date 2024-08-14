@@ -1,5 +1,6 @@
 ﻿using ABC;
 using ConsoleAppForFundamentals;
+using ConsoleAppForFundamentals.FileIO;
 using ConsoleAppForFundamentals.Generics;
 
 // Datatypes
@@ -82,4 +83,11 @@ Generics g = new();
 
 //PlayingWIthCollections.LearnArrays();
 
-Linq.Query();
+//Linq.Query();
+
+var fileHandler = new FileHandler();
+var emps = fileHandler.ReadFile();
+
+fileHandler.WriteFile();
+
+fileHandler.WriteEmployeesToFile(emps);

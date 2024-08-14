@@ -20,4 +20,7 @@ class Person
     {
         Console.WriteLine($"Name: {this.name}\nNational Identifier: {this.nid}\nDate of Birth: {this.dob.ToString("ddd MMM dd, yyyy")}");
     }
+
+    public static string PrintDetails(Person person) =>
+        $"Name: {person.name}\nNational Identifier: {person.nid}\nDate of Birth: {person.dob.ToString("ddd MMM dd, yyyy")}";
 }

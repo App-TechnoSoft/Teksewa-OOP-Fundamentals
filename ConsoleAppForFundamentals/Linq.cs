@@ -1,11 +1,4 @@
-﻿using ABC;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleAppForFundamentals;
+﻿namespace ConsoleAppForFundamentals;
 internal class Linq         // Language Integrated Query
 {
     static double[] marks = [34.5, 67.1, 80.5, 65.8, 70.5, 45.0, 68, 20.5];    // "34.50", "67.10"

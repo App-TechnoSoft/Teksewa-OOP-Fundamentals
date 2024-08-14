@@ -1,0 +1,6 @@
+Name: Bishnu Rawal
+National Identifier: 2342345335
+Date of Birth: Wed Dec 12, 1990
+Name: Rita Shrestha
+National Identifier: 1112345335
+Date of Birth: Thu Jan 10, 2002
