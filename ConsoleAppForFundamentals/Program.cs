@@ -86,8 +86,27 @@ Generics g = new();
 //Linq.Query();
 
 var fileHandler = new FileHandler();
-var emps = fileHandler.ReadFile();
+//var emps = await fileHandler.ReadFileAsync();
 
-fileHandler.WriteFile();
+//await fileHandler.WriteFileAsync();
 
-fileHandler.WriteEmployeesToFile(emps);
+//await fileHandler.WriteEmployeesToFileAsync(emps);
+
+//FolderHandler.CreateFolder("Reports");
+//FolderHandler.CreateFolder("Teksewa");
+//FolderHandler.CreateFolder("ABC", @"D:\");
+
+ParallelAndAsync parallel = new ParallelAndAsync();
+//parallel.ComputeSequential();
+//parallel.ComputeParallel();
+
+var output2 = await parallel.DoTask2();
+Console.WriteLine(output2);
+
+
+
+// Read text file content from https://sherlock-holm.es/stories/plain-text/lstb.txt
+// Create new class and implement following
+// 1. Method to count number of paragraphs
+// 2. Method to count number of senetences
+// 3. Method to count number of words and their freqeuncies

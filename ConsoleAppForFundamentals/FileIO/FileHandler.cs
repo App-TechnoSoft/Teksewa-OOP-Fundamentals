@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 namespace ConsoleAppForFundamentals.FileIO;
 internal class FileHandler
 {
-    public List<Person> ReadFile()
+    public async Task<List<Person>> ReadFileAsync()
     {
         string filePath = @"D:\AppSoft\Pro Training\Teksewa-OOP-Fundamentals\ConsoleAppForFundamentals\FileIO\Files\Employees.csv";
-        var fileContent = File.ReadAllText(filePath);
+        var fileContent = await File.ReadAllTextAsync(filePath);
 
         // Display name and dob of all people in employees.csv
         var lines = fileContent.Split(["\n", "\r"], StringSplitOptions.RemoveEmptyEntries);
@@ -41,19 +41,29 @@ internal class FileHandler
         return employees;
     }
 
-    public void WriteFile()
+    public async Task WriteFileAsync()
     {
         string filePath = @"D:\AppSoft\Pro Training\Teksewa-OOP-Fundamentals\ConsoleAppForFundamentals\FileIO\Files\People.txt";
-        File.WriteAllText(filePath, "This file contains people information\nThis file contains people information");
+        await File.WriteAllTextAsync(filePath, "This file contains people information\nThis file contains people information");
     }
 
-    public void WriteEmployeesToFile(List<Person> employees)
+    public async Task WriteEmployeesToFileAsync(List<Person> employees)
     {
         string filePath = @"D:\AppSoft\Pro Training\Teksewa-OOP-Fundamentals\ConsoleAppForFundamentals\FileIO\Files\Employees.txt";
 
         var employeesCollection = employees.Select(Person.PrintDetails);
 
-        File.WriteAllLines(filePath, employeesCollection);
+        await File.WriteAllLinesAsync(filePath, employeesCollection);
+    }
+
+    public void GetFileInfo()
+    {
+        string filePath = @"D:\AppSoft\Pro Training\Teksewa-OOP-Fundamentals\ConsoleAppForFundamentals\FileIO\Files\People.txt";
+        FileInfo fileInfo = new FileInfo(filePath);
+        Console.WriteLine(fileInfo.FullName);
+        Console.WriteLine(fileInfo.CreationTime);
+        Console.WriteLine(fileInfo.LastAccessTime);
+        Console.WriteLine($"{fileInfo.Length / 1024: F2} KB");
     }
 
 }
